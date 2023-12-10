@@ -1,0 +1,62 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "firebase": "^10.7.1",
+    "gatsby": "^5.12.4",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
+    "gatsby-plugin-image": "^3.12.0",
+    "gatsby-plugin-manifest": "^5.12.0",
+    "gatsby-plugin-sharp": "^5.12.3",
+    "gatsby-source-filesystem": "^5.12.1",
+    "gatsby-transformer-sharp": "^5.12.0",
+    "mysql2": "^3.6.5",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gatsby-plugin-postcss": "^6.12.0",
+    "postcss": "^8.4.31",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-default.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "homepage": "https://github.com/gatsbyjs/gatsby-starter-default#readme",
+  "main": "gatsby-browser.js"
+}

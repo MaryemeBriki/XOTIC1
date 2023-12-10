@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ajoutez ces styles à votre fichier CSS */
+
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin-top: 50px; /* Adjust the margin to position the game */
+}
+
+.board-row {
+  display: flex;
+  margin-bottom: 5px; /* Add margin between board rows */
+}
+
+.square {
+  width: 60px; /* Adjust the square size for a larger game board */
+  height: 60px;
+  font-size: 20px; /* Adjust the font size for the square */
+  text-align: center;
+  line-height: 60px;
+  border: 2px solid #ddd; /* Adjust the border size for better visibility */
+  margin-right: -2px;
+  margin-top: -2px;
+  cursor: pointer;
+}
+
+.status {
+  margin-bottom: 20px; /* Adjust the margin for the game status */
+  font-size: 24px; /* Adjust the font size for the game status */
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between buttons */
+}
+
+.medium-button {
+  padding: 12px 24px; /* Adjust the padding for the buttons */
+  font-size: 16px; /* Adjust the font size for the buttons */
+  border-radius: 8px; /* Adjust the border radius for rounded corners */
+}
+
+
+.medium-button:hover {
+  background-color: #3182ce; /* Couleur de fond du bouton au survol */
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255); /* Couleur de fond de l'en-tête */
+  z-index: 1000; /* Assurez-vous que l'en-tête est au-dessus de tout le contenu */
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: rgb(118, 175, 239);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Ajouter des styles spécifiques pour chaque lien */
+li#accueil a {
+  border-color: #4299e1; /* Couleur de la bordure pour Accueil */
+}
+
+li#about a {
+  border-color: #4299e1; /* Couleur de la bordure pour À propos */
+}
+
+li#game a {
+  border-color: #4299e1; /* Couleur de la bordure pour Jouer au Tic Tac Toe */
+}
+
+li a:hover {
+  color: #ffffff;
+  background-color: #098af4;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+h1 {
+  text-align: center;
+}
+h1 {
+  @apply text-4xl font-bold mb-4 text-blue-500; /* Exemple de styles pour les titres */
+}
+
+p {
+  @apply text-lg text-gray-600 mb-6; /* Exemple de styles pour les paragraphes */
+}
+/* global.css */
+/* global.css */
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  flex: 1; /* Faites en sorte que le contenu occupe l'espace disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem; /* Ajoutez un espace autour du contenu si nécessaire */
+}
+
+h1 {
+  @apply text-4xl font-bold mb-4 text-blue-500; /* Styles pour le titre */
+}
+/* TicTacToe.css */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.balloon {
+  display: inline-block;
+  font-size: 2em;
+  animation: float 1s infinite;
+}
